@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{307550A8-0060-4BFC-9CAB-E437FF59EBF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8D9228C2-B227-4A96-8AAD-E21C44A24F06}"
+	ProjectSection(SolutionItems) = preProject
+		..\Work1Balash\Work1Balash\Figure.cs = ..\Work1Balash\Work1Balash\Figure.cs
+		..\Work1Balash\Work1Balash.sln = ..\Work1Balash\Work1Balash.sln
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "First_lab", "..\First_lab 2\First_lab\First_lab.csproj", "{38372127-0A87-46C3-B8A0-7D95E6C5DC3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{307550A8-0060-4BFC-9CAB-E437FF59EBF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{307550A8-0060-4BFC-9CAB-E437FF59EBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{307550A8-0060-4BFC-9CAB-E437FF59EBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{307550A8-0060-4BFC-9CAB-E437FF59EBF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38372127-0A87-46C3-B8A0-7D95E6C5DC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38372127-0A87-46C3-B8A0-7D95E6C5DC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38372127-0A87-46C3-B8A0-7D95E6C5DC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38372127-0A87-46C3-B8A0-7D95E6C5DC3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD5C0391-98A2-4968-8D88-EB25A70ABC62}
+	EndGlobalSection
+EndGlobal
