@@ -17,8 +17,13 @@ namespace Singleton
 
             Logger.Instance.WriteLogErrorMsg("бла бла");
 
-            var f = FigureFactory.Instance.CreateFigure(1);
-            FigureFactory.Instance.WriteToXml(f);
+            var factory = FigureFactory.Instance;
+
+            var Circle = factory.CreateFigure(0);
+            var Polygon = factory.CreateFigure(2);
+
+            FigureFactory.Instance.WriteToXml(Circle);
+            FigureFactory.Instance.WriteToXml(Polygon);
             
 
 

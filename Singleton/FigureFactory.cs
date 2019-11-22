@@ -59,33 +59,24 @@ namespace Singleton
         }
         void UnregisterFigure () { }
 
-        public  void WriteToXml (int id)
+
+        public void WriteToXml (Figure figure)
         {
-            var XmlFile = new XmlSerializer(typeof(Figure));
+            var XmlFile = new XmlSerializer(figure.GetType());
 
             try
             {
-                var figure = CallBackMap[id];
-
-                using (FileStream fs = new FileStream("Circle.xml", FileMode.OpenOrCreate))
+                using (FileStream fs = new FileStream(figure.GetType().Name + ".xml", FileMode.OpenOrCreate))
                 {
                     XmlFile.Serialize(fs, figure);
 
                     Console.WriteLine("Объект сериализован");
                 }
             }
-            catch(Exception exc) { Logger.Instance.WriteLogErrorMsg(exc); }
-        }
+            catch(Exception exc)
+                {
+                Logger.Instance.WriteLogErrorMsg(exc.ToString());
 
-        public void WriteToXml (Figure figure)
-        {
-            var XmlFile = new XmlSerializer(typeof(Figure));
-
-            using (FileStream fs = new FileStream("Circle.xml", FileMode.OpenOrCreate))
-            {
-                XmlFile.Serialize(fs, figure);
-
-                Console.WriteLine("Объект сериализован");
             }
 
         }
