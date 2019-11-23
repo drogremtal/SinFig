@@ -44,6 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FigureFactory.cs" />
+    <Compile Include="Figure\Circle.cs" />
+    <Compile Include="Figure\Figure.cs" />
+    <Compile Include="Figure\Polygon.cs" />
+    <Compile Include="Figure\Triangle.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -52,12 +56,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\First_lab 2\First_lab\First_lab.csproj">
-      <Project>{38372127-0A87-46C3-B8A0-7D95E6C5DC3C}</Project>
-      <Name>First_lab</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

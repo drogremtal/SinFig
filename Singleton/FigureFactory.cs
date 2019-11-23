@@ -13,8 +13,6 @@ namespace Singleton
     class FigureFactory : Singleton<FigureFactory>
     {
 
-        Figure figure;
-
         Dictionary<int, Figure> CallBackMap = new Dictionary<int, Figure> {
             {0,
                 new Triangle(){
@@ -80,6 +78,21 @@ namespace Singleton
             }
 
         }
+
+        public Figure ReadToXml(Figure figure){
+
+            try
+            {
+                var XmlFile = new XmlSerializer(figure.GetType());
+                using (FileStream fs = new FileStream(figure.GetType().Name+ ".xml",FileMode.OpenOrCreate))
+                {
+                    figure =(Figure) XmlFile.Deserialize(fs);
+                }
+            }
+            catch (Exception exc) { }
+
+            return figure;
+               }
 
 
         //private Figure CreateTriangle()

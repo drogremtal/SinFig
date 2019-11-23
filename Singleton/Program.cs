@@ -19,14 +19,16 @@ namespace Singleton
 
             var factory = FigureFactory.Instance;
 
-            var Circle = factory.CreateFigure(0);
+            var Circle = factory.CreateFigure(1);
             var Polygon = factory.CreateFigure(2);
 
             FigureFactory.Instance.WriteToXml(Circle);
             FigureFactory.Instance.WriteToXml(Polygon);
-            
 
 
+
+
+            var FIGURE = factory.ReadToXml(Circle);
 
             
         }
